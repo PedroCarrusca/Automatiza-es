@@ -45,28 +45,28 @@ def find_vm_in_folder(folder, vm_name):
 
 # Parâmetros de conexão
 vcenter_ips = [
-    "10.150.1.150",
-    "10.150.1.151",
-    "10.150.1.152"     
+    "xxx.xxx.xxx.xxx",
+    "xxx.xxx.xxx.xxx",
+    "xxx.xxx.xxx.xxx"     
     ] 
 
 # Lista de IPs de vCenters
 
-vcenter_username = "root"
-vcenter_password = "Password.2023"
+vcenter_username = "usuário"
+vcenter_password = "Senha"
 
 # Lista de VMs a processar
 vm_names = [
-    "CMSRVCRM01",  # Adicione os nomes das VMs aqui
-    "CMSRVCRM02",
-    "CMSRVDC01",
-    "CMSRVDC02",
-    "CMSRVExpert",
-    "CMSRVExpertWeb",
-    "CMSRVFS1",
-    "CMSRVGESTAO",
-    "CMSRVMON",
-    "CMSRVWEB99"
+    "Nome Servidor",  # Adicione os nomes das VMs aqui
+    "Nome Servidor",
+    "Nome Servidor",
+    "Nome Servidor",
+    "Nome Servidor",
+    "Nome Servidor",
+    "Nome Servidor",
+    "Nome Servidor",
+    "Nome Servidor",
+    "Nome Servidor"
     
 ]
 
