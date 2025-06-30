@@ -45,23 +45,23 @@ def find_vm_in_folder(folder, vm_name):
 
 # Parâmetros de conexão
 vcenter_ips = [
-    "192.168.20.26", 
-    "192.168.20.27", 
-    "192.168.20.29"
+    "xxx.xxx.xxx.xxx", 
+    "xxx.xxx.xxx.xxx", 
+    "xxx.xxx.xxx.xxx"
 ]  # Lista de IPs de vCenters
 
-vcenter_username = "root"
-vcenter_password = "1Bisilque23"
+vcenter_username = "usuario"
+vcenter_password = "Senha"
 
 # Lista de VMs a processar
 vm_names = [
-    "BIS-PT-APL02",  # Adicione os nomes das VMs aqui
-    "BIS-PT-DC00",
-    "BIS-PT-ERP01",
-    "BIS-PT-FG02",
-    "BIS-PT-MNT01",
-    "VM-PT-ESM-001",
-    "VM-PT-ESM-002"    
+    "Nome VM",  # Adicione os nomes das VMs aqui
+    "Nome VM",
+    "Nome VM",
+    "Nome VM",
+    "Nome VM",
+    "Nome VM",
+    "Nome VM"    
     
 ]
 
