@@ -24,13 +24,13 @@ LIGHT_TEXT = "#333333"
 
 # Criar a janela principal
 root = tk.Tk()
-root.title("Análise de Tickets - DECSIS")
+root.title("Análise de Tickets - Nome Empresa")
 root.state("zoomed")  # fullscreen
 root.resizable(True, True)
 
 # Definir o ícone da janela
 try:
-    root.iconbitmap("C:/GOC/GOC_Launcher/Img/Icon/ds.ico")
+    root.iconbitmap("Caminho do ícone")
 except:
     pass
 
@@ -388,7 +388,7 @@ class TicketSearchApp:
         # Rodapé
         footer = ttk.Label(
             self.container,
-            text=f"© {datetime.now().year} DECSIS - Desenvolvido por Igor Cunha (GOC)",
+            text=f"© {datetime.now().year} Nome empresa",
             font=(MODERN_FONT, 9)
         )
         footer.pack(side="bottom", pady=(20, 0))
@@ -567,24 +567,24 @@ class TicketSearchApp:
     
     def encontrar_pasta_cliente(self, archive, empresa):
         pasta_correspondente = {
-            "BI-SILQUE, PRODUTOS DE COMUNICAÇÃO VISUAL, S.A.": "Bi-silque",
-            "Nimco Portugal, Lda.": "NIMCO",
-            "Fundação Casa da Música": "Fundação Casa da Musica",
-            "FLATLANTIC (ACUINOVA)": "FLATLANTIC",
-            "Sonae MC": "Sonae",
-            "BRISA": "Brisa",
-            "WELLS": "Sonae\\Wells",
-            "CIMAC - COMUNIDADE INTERMUNICIPAL DO ALENTEJO CENTRAL": "CIMAC",
-            "GRI": "Interno\\GRI",
-            "ÁGORA - CULTURA E DESPORTO DO PORTO, S.A.": "Ágora",
-            "Sheraton Porto Hotel": "Sheraton Hotel",
-            "Pinto & Cruz Gestão, Unipessoal Lda": "Pinto & Cruz",
-            "Haco-Etiquetas, S.A": "Haco-Etiquetas",
-            "Atobe - Mobility Technology, SA": "Atobe",
-            "Câmara Municipal de Santa Maria da Feira": "CM-Feira",
-            "Fresenius Kabi Pharma Portugal": "Fresenius",
-            "SES IMAGOTAG": "Sonae\\SESIMAGOTAG",
-            "WORTEN - EQUIPAMENTOS PARA O LAR S A": "Sonae\\Worten\\Modelos"
+            "Nome Cliente Completo": "Cliente",
+            "Nome Cliente Completo": "Cliente",
+            "Nome Cliente Completo": "Cliente",
+            "Nome Cliente Completo": "ClienteC",
+            "Nome Cliente Completo": "Cliente",
+            "Nome Cliente Completo": "Cliente",
+            "Nome Cliente Completo": "Cliente",
+            "Nome Cliente Completo": "Cliente",
+            "Nome Cliente Completo": "Cliente",
+            "Nome Cliente Completo": "Cliente",
+            "Nome Cliente Completo": "Cliente",
+            "Nome Cliente Completo": "Cliente",
+            "Nome Cliente Completo": "Cliente",
+            "Nome Cliente Completo": "Cliente",
+            "Nome Cliente Completo": "Cliente",
+            "Nome Cliente Completo": "Cliente",
+            "Nome Cliente Completo": "Cliente",
+            "Nome Cliente Completo": "Cliente"
         }
         nome_pasta = pasta_correspondente.get(empresa, None)
         if nome_pasta:
@@ -708,7 +708,7 @@ class TicketSearchApp:
             new_mail = outlook.CreateItem(0)  # 0 = olMailItem
             
             # Configurar destinatário e assunto
-            new_mail.To = "itop.tickets@grupodecsis.eu"
+            new_mail.To = "itop.tickets@dominio do email"
             new_mail.Subject = f"Atualização de ticket - {email.Subject}"
             
             # Obter a pasta Sent Items
