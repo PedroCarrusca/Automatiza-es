@@ -3,23 +3,23 @@ import json
 import browser_cookie3  # Captura cookies do navegador
 
 # Coleta cookies do Chrome (ou use .firefox(), .edge(), etc.)
-cookies = browser_cookie3.chrome(domain_name='servicos.grupodecsis.eu')
+cookies = browser_cookie3.chrome(domain_name='nome do dominio')
 
 # URL da API do iTop
-itop_url = "https://servicos.grupodecsis.eu/webservices/rest.php?version=1.3"
+itop_url = "url desejada"
 
 # Dados do ticket
 ticket_data = {
     "operation": "core/create",
     "class": "UserRequest",
     "fields": {
-        "title": "Disco acima da percentagem! no dispositivo FLATLANTIC-srvntilocls02",
-        "description": "Equipamento em questão possui o disco c: acima da percentagem",
-        "org_id": "Flatlantic",         # Substituir por ID se necessário
-        "caller_id": "Nuno Cunha",      # Substituir por ID se necessário
+        "title": "Titulo do ticket",
+        "description": "DEscrição Ticket",
+        "org_id": "Cliente",         # Substituir por ID se necessário
+        "caller_id": "Pessoa responsável",      # Substituir por ID se necessário
         "impact": "2",
         "urgency": "2",
-        "origin": "monitoramento",
+        "origin": "tipo de serviço",
         "contract_id": "308",           # <-- Substituir pelo ID real
         "service_id": "308"             # <-- Substituir pelo ID real
     }
