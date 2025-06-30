@@ -1,14 +1,14 @@
 # Variáveis de configuração
-$wlcHost = "10.0.90.2"              # IP da WLC
-$Username = "decunify"                    # Usuário da WLC
-$Password = "drttech2K"            # Senha da WLC
+$wlcHost = "xxx.xxx.xxx.xxx"              # IP da WLC
+$Username = "xxxx"                    # Usuário da WLC
+$Password = "xxxx"            # Senha da WLC
 
 # Comandos para backup
 $Commands = @(
     "transfer upload mode tftp",
     "transfer upload datatype config",
     "transfer upload filename backup-config.cfg",
-    "transfer upload serverip 10.0.90.228"
+    "transfer upload serverip xxx.xxx.xxx.xxx"
 )
 
 # Converte senha em formato seguro
